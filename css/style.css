@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: red;
+}
+/*HEADER*/
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+}
+/*NAV*/
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+}
+nav p {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+}
+nav p:hover {
+  color: red;
+}
+nav p:active {
+  color: brown;
+}
+header img {
+  width: 300px;
+  cursor: pointer;
+}
+/*MAIN*/
+main {
+  width: 100%;
+  height: 150vh;
+  background-color: rgba(181, 105, 13, 0.302);
+}
+/*CONTAINERT*/ 
+.container1 {
+  background-color: rgb(190, 168, 168);
+  width: 100%;
+  height: 50vh;
+  margin-top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*ABOUTUS*/
+.desprenoi-h1  h1{
+  color: rgb(4, 0, 0);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+.desprenoi  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  font-size: 18px;
+  font-style:italic;
+  word-spacing: 5px;
+}
