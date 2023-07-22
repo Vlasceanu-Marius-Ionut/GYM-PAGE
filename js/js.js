@@ -6,8 +6,8 @@ function mainPage(){
 }
 
 //MORE LEARNING
-const ar = function(double) {
-  return double / 3
+const ar = function(triple) {
+  return triple / 3
 }
 
 function nbrs (a,b,c,d) {
@@ -22,3 +22,29 @@ nbrs()
 const solution = nbrs(44 + 33 + 22 + 502);
 console.log(solution)
 
+
+
+//SWITCFH
+switch(orar) {
+  case 'Luni' :
+    console.log('vase')
+  break
+  case 'Marti' :
+    console.log('Sala')
+  break
+  case 'Miercuri' :
+    console.log('Programare');
+  break;
+  case 'Joi':
+    console.log('Programare')
+  break
+  case 'Vineri' :
+    console.log('Programare')
+  break
+  case 'Sambata' :
+    console.log('Sala');
+  break
+  case 'Duminica':
+    console.log('Mancare')
+  default:
+}
