@@ -44,7 +44,7 @@ switch(orar) {
   case 'Sambata' :
     console.log('Sala');
   break
-  case 'Duminica':
+  case 'Duminicas':
     console.log('Mancare')
   default:
 }
