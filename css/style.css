@@ -3,4 +3,94 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955), ease-in-out, 1s;
+}
+/*BODY------------------------*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size:cover;
+  background-image: url(/images/sala.jpg);
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}
+/*HEADER------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+header img {
+  width: 300px;
+  border: rgba(0, 0, 0, 0.136) solid 2px;
+}
+/*NAV------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  height: 7vh;
+  background-color: rgba(101, 97, 97, 0.431);
+  box-shadow: rgba(0, 0, 0, 0.132) 0px 1px;
+  flex-wrap: wrap;
+}
+
+nav p {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: x-large;
+  font-weight: bold;
+
+}
+nav p:hover {
+  color: brown;
+}
+nav p:hover:active {
+  transition: 0.3s;
+  color: rgb(67, 0, 130);
+}
+/*LI------------------------*/
+::marker {
+  color: antiquewhite;
+}
+/*MAIN------------------------*/
+main {
+  width: 100%;
+  height: 150vh;
+  background-color: rgba(255, 255, 255, 0.883);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding:100px 100px;
+  margin-top: 20px;
+}
+/*CONTAINER1------------------------*/
+.container1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/*CONTAINER2------------------------*/
+.container2 {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+.antrenor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
