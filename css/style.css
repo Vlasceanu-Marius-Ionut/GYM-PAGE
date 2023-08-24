@@ -17,6 +17,7 @@ body {
   background-image: url(/images/sala.jpg);
   padding: 50px;
   flex-wrap: wrap;
+
 }
 
 /* Header Styles */
@@ -66,7 +67,7 @@ nav p:hover:active {
 
 /* Main Content Styles */
 main {
-  width: 100%;
+  width: 80%;
   height: 100vh; 
   background-color: rgba(255, 255, 255, 0.883);
   border-bottom-left-radius: 20px;
