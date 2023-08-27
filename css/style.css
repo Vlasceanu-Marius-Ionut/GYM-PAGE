@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-size: cover;
-  background-image: url(/images/sala.jpg);
+  background-image: url(../images/sala.jpg);
   padding: 50px;
   flex-wrap: wrap;
 
