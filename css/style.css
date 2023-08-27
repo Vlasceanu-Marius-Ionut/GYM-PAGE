@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   transition: cubic-bezier(0.455, 0.03, 0.515, 0.955), ease-in-out, 1s;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Body Styles */
@@ -34,6 +35,7 @@ header {
 header img {
   width: 300px;
   border: rgba(0, 0, 0, 0.136) solid 2px;
+  cursor: pointer;
 }
 
 /* Navigation Styles */
@@ -85,21 +87,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Added padding for spacing */
+  padding: 20px;
   box-shadow: 10px 2px 10px 10px rgba(0, 0, 0, 0.486);
-  padding: 15%;
+  padding: 4%;
 }
 
 .desprenoi {
   width: 100%;
   height: 800px;
-
-  overflow: none;
   display: flex;
   flex-direction: column; 
   align-items: center;
   justify-content: start;
-  padding: 20px; 
 }
 
 .desprenoi p {
@@ -113,4 +112,28 @@ h1 {
   align-items: center;
   justify-content: center;
   text-decoration: underline;
+}
+/*FOOTER----------------------------------*/
+footer {
+  width: 80%;
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.883);
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 350px;
+}
+li {
+  cursor: pointer;
+
+}
+li::marker {
+  color: rgba(255, 255, 255, 0);
 }
