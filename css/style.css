@@ -43,30 +43,42 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  height: 7vh;
+  width: 85%;
+  height: 10vh;
   background-color: rgba(101, 97, 97, 0.431);
   box-shadow: rgba(0, 0, 0, 0.132) 0px 1px;
   flex-wrap: wrap;
 }
 
 nav p {
+  position: relative;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s ease-in-out;
   font-size: x-large;
   font-weight: bold;
-  color: white; /* Added color for better visibility */
+  color: white;
 }
 
-nav p:hover {
-  color: brown;
+/* Underline styles */
+nav p::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition:0.3s;
 }
 
-nav p:hover:active {
-  transition: 0.3s;
-  color: rgb(67, 0, 130);
+/* Hover effect */
+nav p:hover:active{
+  color: aqua;
 }
 
+nav p:hover::before {
+  width: 100%;
+}
 /* Main Content Styles */
 main {
   width: 80%;
@@ -132,7 +144,29 @@ footer ul{
 }
 li {
   cursor: pointer;
+  list-style-type: none;
+  position: relative;
+}
 
+/* Underline styles */
+li::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #333; /* Change the color to your preference */
+  transition: width 0.4s;
+}
+
+/* Hover effect */
+li:hover::before {
+  width: 100%;
+}
+li:hover:active{
+  transition: 0.3s;
+  color: rgb(0, 142, 177);
 }
 li::marker {
   color: rgba(255, 255, 255, 0);
