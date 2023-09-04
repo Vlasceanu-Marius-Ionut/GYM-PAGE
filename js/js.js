@@ -1,8 +1,9 @@
 'use strict'
 
 function clicker(id, url) {
-    const element = document.getElementById(id);
-    if (element) {
+    const idis = document.getElementById(id);
+   
+    if (idis) {
       element.addEventListener('click', () => {
         window.location.href = url;
       });
