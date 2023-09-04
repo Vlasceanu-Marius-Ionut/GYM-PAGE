@@ -234,7 +234,7 @@ li::marker {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width <= 700px) {
 
   header {
     font-size: 18px;
@@ -246,9 +246,15 @@ li::marker {
   .container1 {
     width: 90%; 
   }
+  footer {
+    width: 100%;
+  }
+  .container1{
+    width: 100%;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width <= 550px) {
  
   header {
     font-size: 16px;
