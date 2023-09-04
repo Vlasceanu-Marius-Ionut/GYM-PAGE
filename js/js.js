@@ -4,7 +4,7 @@ function clicker(id, url) {
     const idis = document.getElementById(id);
    
     if (idis) {
-      element.addEventListener('click', () => {
+      idis.addEventListener('click', () => {
         window.location.href = url;
       });
     }
