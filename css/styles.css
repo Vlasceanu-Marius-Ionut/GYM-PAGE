@@ -123,6 +123,7 @@
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
 
   .prod:hover{

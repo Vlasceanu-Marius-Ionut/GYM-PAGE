@@ -10,7 +10,7 @@ forImg.addEventListener('click',() => {
     window.location.href = "https://vlasceanu-marius-ionut.github.io/GYM-PAGE/"
 })
 
-const products = document.getElementById('produse');
+const products = document.getElementById('products');
 products.addEventListener('click', ()=> {
     window.location.href="pg2.html"
 })
