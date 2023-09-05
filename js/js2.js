@@ -12,20 +12,16 @@ forImg.addEventListener('click',() => {
 
 const products = document.getElementById('produse');
 products.addEventListener('click', ()=> {
-    window.location.href=""
+    window.location.href="pg2.html"
 })
 
 const forInsta = document.getElementById('Instagram');
 forInsta.addEventListener('click', () =>{
-    window.location.href
+    window.location.href="https://www.instagram.com/classicgymcolentina/"
 })
 
 const forFacebook = document.getElementById('Facebook');
 forFacebook.addEventListener('click', () =>{
-    window.location.href
+    window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
 
-const telePhone = document.getElementById('Telefon');
-telePhone.addEventListener('click', () =>{
-    window.location.href
-})
