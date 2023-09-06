@@ -47,24 +47,24 @@ window.addEventListener('resize', () =>{
 });
 
 //slider
-let i = 0
+let i = 0;
 let images = [];
-let time = 3000;
+let time = 2000;
 
-image[0] = './images/img1.jpg'
-image[1] = './images/img2.jpg'
-image[2] = './images/img3.jpg'
-image[3] = '.images/img4.jpg'
-image[4] = './images/img5.jpg'
+images[0] = './images/img1.jpg';
+images[1] = './images/img2.jpg';
+images[2] = './images/img4.jpg'; 
+images[3] = './images/img5.jpg';
 
-function changeimg(){
-    document.slide.src = images[i];
-
-    if(i < images.length -1){
-        i++
-    }else {
-        i = 0
+function changeimg() {
+    document.getElementById('slide').src = images[i];
+  
+    if (i < images.length - 1) {
+      i++;
+    } else {
+      i = 0;
     }
-    setTimeout('changeimg()', time);
-}
-window.onload = changeimg;
+    setTimeout(changeimg, time);
+  }
+  
+  window.onload = changeimg;
