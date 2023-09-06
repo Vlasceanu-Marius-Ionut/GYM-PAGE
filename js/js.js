@@ -47,35 +47,24 @@ window.addEventListener('resize', () =>{
 });
 
 //slider
+let i = 0
+let images = [];
+let time = 3000;
 
-const slides = document.querySelectorAll('carrouselle');
-const nextbtn = document.getElementById('nextbtn');
-const prevbtn = document.getElementById('prevbtn'); //elementele
+image[0] = './images/img1.jpg'
+image[1] = './images/img2.jpg'
+image[2] = './images/img3.jpg'
+image[3] = '.images/img4.jpg'
+image[4] = './images/img5.jpg'
 
-let iterar = 0; //folosim mai tarziu incepe de la 0 pentru numaratoare
+function changeimg(){
+    document.slide.src = images[i];
 
-function imger(index) {
-    slides.forEach((slides, i =>{  //foreachul
-        if(i === index) {
-            slides.style.display = 'block';
-        }else {
-            slides.style.display = 'none';
-        }
-    }));
-}
-
-function nextSlider() {
-    iterar++ //mai multa iteare care pornetse de la 0
-    if(nextbtn >= slides.length){
-        iterar = 0
+    if(i < images.length -1){
+        i++
+    }else {
+        i = 0
     }
-    imager(iterar);
+    setTimeout('changeimg()', time);
 }
-
-function prevSlider(){
-    iterar--;
-    if(iterar < 0){
-        iterar = slides.length -1;
-    }
-    imager(iterar)
-}
+window.onload = changeimg;
