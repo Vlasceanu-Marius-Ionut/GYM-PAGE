@@ -25,3 +25,4 @@ forFacebook.addEventListener('click', () =>{
     window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
 
+let burgermenu;
