@@ -45,3 +45,37 @@ burgermenu.addEventListener('click', () =>{
 window.addEventListener('resize', () =>{
     mainNav.classList.remove('show-menu')
 });
+
+//slider
+
+const slides = document.querySelectorAll('carrouselle');
+const nextbtn = document.getElementById('nextbtn');
+const prevbtn = document.getElementById('prevbtn'); //elementele
+
+let iterar = 0; //folosim mai tarziu incepe de la 0 pentru numaratoare
+
+function imger(index) {
+    slides.forEach((slides, i =>{  //foreachul
+        if(i === index) {
+            slides.style.display = 'block';
+        }else {
+            slides.style.display = 'none';
+        }
+    }));
+}
+
+function nextSlider() {
+    iterar++ //mai multa iteare care pornetse de la 0
+    if(nextbtn >= slides.length){
+        iterar = 0
+    }
+    imager(iterar);
+}
+
+function prevSlider(){
+    iterar--;
+    if(iterar < 0){
+        iterar = slides.length -1;
+    }
+    imager(iterar)
+}
