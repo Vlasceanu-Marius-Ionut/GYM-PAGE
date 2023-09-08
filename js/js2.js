@@ -12,7 +12,7 @@ forImg.addEventListener('click',() => {
 
 const products = document.getElementById('products');
 products.addEventListener('click', ()=> {
-    window.location.href="pg2.html"
+    window.location.href="produse.html"
 })
 
 const forInsta = document.getElementById('Instagram');
