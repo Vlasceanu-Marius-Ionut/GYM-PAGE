@@ -12,7 +12,22 @@ forImg.addEventListener('click',() => {
 
 const products = document.getElementById('products');
 products.addEventListener('click', ()=> {
-    window.location.href="pg2.html"
+    window.location.href="produse.html"
+})
+
+const workingProgram = document.getElementById('program');
+workingProgram.addEventListener('click', () =>{
+  window.location.href="program-de-lucru.html"
+})
+
+const prices = document.getElementById('preturi');
+prices.addEventListener('click', () =>{
+  window.location.href="preturi-abonamente.html"
+})
+
+const antrenor = document.getElementById('antrenori');
+antrenor.addEventListener('click', () => {
+  window.location.href="antrenori.html"
 })
 
 const forInsta = document.getElementById('InstagramLink');
@@ -24,6 +39,7 @@ const forFacebook = document.getElementById('FacebookLink');
 forFacebook.addEventListener('click', () =>{
     window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
+
 
 //BURGERMENU
 
