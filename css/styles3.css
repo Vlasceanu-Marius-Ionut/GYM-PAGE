@@ -105,16 +105,19 @@
     margin-top: 2%;
     padding: 2%;
   }
-  section {
+  .despreprogram {
     background-color: #ffffff;
     width: 95%;
     height: 100%;
+    padding: 50px;
   }
   section h1 {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    text-decoration:underline;
   }
+
 article > p{
   width: 100%;
   height: 100vh;
@@ -123,6 +126,84 @@ article > p{
   justify-content: center;
   align-items: center;
  }
+
+.clock {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  margin-left: 40%;
+  margin-top: 50px;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+}
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .hand.minute {
+  width: 7px;
+  height: 40%;
+  background-color: black;
+}
+
+.clock .hand.hour {
+  width: 10px;
+  height: 35%;
+  background-color: black;
+}
+
 
  footer {
   width: 85%;
@@ -163,6 +244,31 @@ li:hover {
 i, .fab {
   font-size: 20px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5%;
+}
+
+th {
+  background-color: #f2f2f2;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  border: solid black 1px;
+  height: 100px;
+  text-align: center;
+}
 @media (max-width: 1600px) {
   html {
     font-size: 20px;
@@ -173,7 +279,7 @@ i, .fab {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Increase body padding for better readability */
+    padding: 20px;
   }
   main {
     width: 100%;
@@ -294,6 +400,34 @@ i, .fab {
   section h1 {
     margin-top: 10%;
   }
+  table {
+    border: 0;
+}
+
+table caption {
+    font-size: 1.3em;
+}
+
+table thead {
+    display: none;
+}
+
+table tr {
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+table td {
+    display: block;
+    text-align: right;
+}
+
+table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+}
 }
 
 @media (max-width: 480px) {
