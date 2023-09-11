@@ -110,6 +110,10 @@
     width: 95%;
     height: 100%;
     padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   section h1 {
     display: flex;
@@ -134,7 +138,6 @@ article > p{
   border-radius: 50%;
   border: 2px solid black;
   position: relative;
-  margin-left: 40%;
   margin-top: 50px;
 }
 
@@ -246,7 +249,7 @@ i, .fab {
 }
 
 table {
-  width: 100%;
+  width: 1500px;
   border-collapse: collapse;
   margin-top: 5%;
 }
