@@ -95,3 +95,296 @@
   #burger-container {
     background-color: #333333;
   }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333333b0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2%;
+    padding: 2%;
+  }
+  section {
+    background-color: #ffffff;
+    width: 95%;
+    height: 100%;
+  }
+  section h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+  }
+article > p{
+  width: 100%;
+  height: 100vh;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ footer {
+  width: 85%;
+  height: 10vh;
+  background-color: #333333ef;
+  margin-top: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red solid 2px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  gap: 250px;
+}
+
+footer li {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:hover {
+  transform: scale(1.4);
+  transition: 0.3s ease;
+  color: rgb(252, 2, 2);
+}
+
+i, .fab {
+  font-size: 35px;
+}
+@media (max-width: 1600px) {
+  html {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  body {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Increase body padding for better readability */
+  }
+  main {
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  nav {
+    width: 80%;
+  }
+  nav p {
+    font-size: 15px;
+  }
+  footer ul {
+    gap: 200px; /* Adjust as needed */
+  }
+  footer {
+    width: 75%;
+    height: 10vh;
+  }
+  .despreprogram {
+    background-color: rgb(14, 58, 91);
+  }
+  footer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  body {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Increase body padding */
+  }
+  main {
+    width: 100%;
+    padding: 12px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  nav {
+    width: 80%;
+  }
+  nav p {
+    font-size: 14px;
+  }
+  footer ul {
+    gap: 150px; /* Adjust as needed */
+  }
+  footer {
+    width: 75%;
+    height: 10vh;
+  }
+  .despreprogram {
+    background-color: rgb(14, 58, 91);
+  }
+  footer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 854px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    padding: 0;
+  }
+  header img {
+    width: 200px;
+  }
+  nav p {
+    font-size: 12px;
+  }
+  main {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  footer {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+  }
+  footer ul {
+    gap: 100px;
+  }
+  footer .fab,
+  .fas {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    padding: 0;
+  }
+  header img {
+    width: 160px;
+  }
+  nav p {
+    font-size: 11px;
+  }
+  main {
+    margin-top: 5px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    padding: 0;
+  }
+  header img {
+    width: 140px;
+  }
+  nav p {
+    font-size: 10px;
+  }
+  main {
+    margin-top: 3px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    padding: 0;
+  }
+  header img {
+    width: 120px;
+  }
+  nav p {
+    font-size: 9px;
+  }
+  main {
+    margin-top: 2px;
+    padding: 2px;
+  }
+  footer ul {
+    gap: 80px;
+  }
+  footer .fab,
+  .fas {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 250px) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    padding: 0;
+  }
+  header img {
+    width: 100px;
+  }
+  nav p {
+    font-size: 8px;
+  }
+  main {
+    margin-top: 1px;
+    padding: 1px;
+  }
+  .container1 {
+    max-width: 65%;
+  }
+  .desprenoi p {
+    font-size: 8px;
+  }
+
+  footer{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer ul {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  footer .fab,
+  .fas {
+    font-size: 25px;
+    padding: 12px;
+  }
+}
+
