@@ -132,8 +132,8 @@ article > p{
  }
 
 .clock {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-color: rgba(255, 255, 255, .8);
   border-radius: 50%;
   border: 2px solid black;
@@ -172,7 +172,7 @@ article > p{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transform-origin: bottom;
-  z-index: 10;
+  z-index: 1;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
 
