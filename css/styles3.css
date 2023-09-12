@@ -106,7 +106,7 @@
     padding: 2%;
   }
   .despreprogram {
-    background-color: #ffffff;
+    background-color: #ffffffbb;
     width: 95%;
     height: 100%;
     padding: 50px;
@@ -134,7 +134,7 @@ article > p{
 .clock {
   width: 200px;
   height: 200px;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0.506);
   border-radius: 50%;
   border: 2px solid black;
   position: relative;
