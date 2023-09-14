@@ -165,7 +165,6 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: rgb(157, 25, 25);
-  border-radius: 100px;
 }
 
 .containerimg img {
@@ -298,9 +297,16 @@ i, .fab {
   nav p {
     font-size: 13px;
   }
+
   footer .fab,
   .fas {
     font-size: 25px;
+  }
+  footer ul {
+    gap: 100%
+  }
+  .imageslider{
+    margin-top: 50px;
   }
 }
 
@@ -334,7 +340,18 @@ i, .fab {
     height: 10vh;
   }
   footer ul {
-    gap: 200px;
+    gap: 100%;
+  }
+  .containerimg{
+    max-width: 100%;
+    height: auto;
+  }
+  .containerimg img {
+    max-width: 150px;
+    height: auto;
+  }
+  .imageslider{
+    margin-top: 30px;
   }
 }
 
@@ -365,10 +382,24 @@ i, .fab {
   .desprenoi p {
     font-size: 16px; /* Increase text size */
   }
-  footer {
-    margin: 5%;
-    border: none;
+
+  .containerimg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
   }
+  .containerimg img {
+    max-width: 140px;
+    height: auto;
+  }
+  .imageslider{
+    margin-top: 30px;
+  }
+  footer {
+    border: none;
+    border-radius: 0;
+  }
+  
 }
 
 @media (max-width: 480px) {
@@ -427,6 +458,12 @@ i, .fab {
   .desprenoi p {
     font-size: 12px; /* Further increase text size */
   }
+  footer ul {
+    gap: 50px
+  }
+  .imageslider{
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 250px) {
@@ -453,5 +490,11 @@ i, .fab {
 
   .desprenoi p {
     font-size: 10px; /* Further increase text size */
+  }
+  footer ul {
+    gap: 20%
+  }
+  .imageslider{
+    margin-top: 0px;
   }
 }
