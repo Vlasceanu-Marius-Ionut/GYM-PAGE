@@ -42,6 +42,7 @@ forFacebook.addEventListener('click', () =>{
 
 
 
+
 //CLOCK
 setInterval(setClock, 1000)
 

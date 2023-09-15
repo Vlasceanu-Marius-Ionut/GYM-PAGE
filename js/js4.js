@@ -39,3 +39,4 @@ const forFacebook = document.getElementById('FacebookLink');
 forFacebook.addEventListener('click', () =>{
     window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
+
