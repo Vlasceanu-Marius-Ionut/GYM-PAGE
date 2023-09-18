@@ -282,42 +282,18 @@ i, .fab {
 
 /*MEDIA-QUERY*/
 
-
-@media (min-width: 1600px) {
-  .productcontainer {
-    max-width: 100%;
-  }
-  .products {
-    max-width: 100%;
-  }
-  .prod {
-    max-width: 100%;
-  }
-  .prod img {
-    max-width: 100%;
-  }
-}
-
 /* Media query pentru ecrane mari (minim 1280px) */
 @media (min-width: 1280px) {
-  .productcontainer {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-    max-height: auto;
-  }
-  .products {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
+  .productcontainer,
+  .products,
+  .prod,
   .prod img {
     max-width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  .container1{
+    max-width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -325,53 +301,15 @@ i, .fab {
 
 /* Media query pentru ecrane medii (minim 830px) */
 @media (min-width: 830px) {
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  .productcontainer,
+  .products,
+  .prod,
   .prod img {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0;
     padding: 0;
   }
-}
-
-
-/* Media query pentru ecrane medii (minim 730px) */
-@media (min-width: 730px) {
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-
-  }
-  .prod img {
+  .container1{
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -380,86 +318,32 @@ i, .fab {
 
 /* Media query pentru ecrane medii (minim 630px) */
 @media (min-width: 630px) {
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  .productcontainer,
+  .products,
+  .prod,
   .prod img {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0;
     padding: 0;
   }
-}
-
-/* Media query pentru ecrane medii (minim 530px) */
-@media (min-width: 530px) {
-  .productcontainer {
+  .container1{
     max-width: 100%;
-  }
-  .products {
-    max-width: 100%;
-  }
-  .prod {
-    max-width: 100%;
-  }
-  .prod img {
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
 /* Media query pentru ecrane mici (minim 430px) */
 @media (min-width: 430px) {
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 40%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 40%;
-    margin: 0;
-    padding: 0;
-  }
+  .productcontainer,
+  .products,
+  .prod,
   .prod img {
     max-width: 40%;
     margin: 0;
     padding: 0;
   }
-}
-
-/* Media query pentru ecrane foarte mici (minim 360px) */
-@media (min-width: 360px) {
-  .productcontainer {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod img {
+  .container1{
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -468,47 +352,16 @@ i, .fab {
 
 /* Media query pentru ecrane foarte mici (minim 280px) */
 @media (min-width: 280px) {
-  .productcontainer {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
+  .productcontainer,
+  .products,
+  .prod,
   .prod img {
     max-width: 90%;
     margin: 0;
     padding: 0;
   }
-}
-
-/* Media query pentru ecrane foarte mici (minim 220px) */
-@media (min-width: 220px) {
-  .productcontainer {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .products {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod {
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-  }
-  .prod img {
-    max-width: 90%;
+  .container1{
+    max-width: 100%;
     margin: 0;
     padding: 0;
   }

@@ -24,3 +24,5 @@ const antrenor = document.getElementById('antrenori');
 antrenor.addEventListener('click', () => {
   window.location.href="antrenori.html"
 })
+
+//zoom in 
