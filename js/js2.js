@@ -24,29 +24,3 @@ const antrenor = document.getElementById('antrenori');
 antrenor.addEventListener('click', () => {
   window.location.href="antrenori.html"
 })
-
-const forInsta = document.getElementById('InstagramLink');
-forInsta.addEventListener('click', () =>{
-    window.location.href="https://www.instagram.com/classicgymcolentina/"
-})
-
-const forFacebook = document.getElementById('FacebookLink');
-forFacebook.addEventListener('click', () =>{
-    window.location.href="https://www.facebook.com/misternetfitnessclub"
-})
-
-// Zoom la click pe produse
-const prodElements = document.querySelectorAll('.prod');
-
-prodElements.forEach((prod) => {
-  prod.addEventListener('click', () => {
-    if (prod.classList.contains('zoomed-in')) {
-      prod.classList.remove('zoomed-in');
-    } else {
-      prodElements.forEach((element) => {
-        element.classList.remove('zoomed-in');
-      });
-      prod.classList.add('zoomed-in');
-    }
-  });
-});
