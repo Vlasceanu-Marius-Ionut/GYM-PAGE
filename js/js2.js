@@ -39,3 +39,19 @@ const forFacebook = document.getElementById('FacebookLink');
 forFacebook.addEventListener('click', () =>{
     window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
+
+
+//zoom 
+
+
+const prodElements = document.querySelectorAll('.prod');
+
+prodElements.forEach((prod) => {
+  prod.addEventListener('click', () => {
+    if (prod.classList.contains('zoomed-in')) {
+      prod.classList.remove('zoomed-in');
+    } else {
+      prod.classList.add('zoomed-in');
+    }
+  });
+});
