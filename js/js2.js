@@ -5,11 +5,6 @@ mainPage.addEventListener('click',() =>{
     window.location.href = "https://vlasceanu-marius-ionut.github.io/GYM-PAGE/"
 })
 
-const forImg = document.getElementById('forimg');
-forImg.addEventListener('click',() => {
-    window.location.href = "https://vlasceanu-marius-ionut.github.io/GYM-PAGE/"
-})
-
 const products = document.getElementById('products');
 products.addEventListener('click', ()=> {
     window.location.href="produse.html"
@@ -40,10 +35,7 @@ forFacebook.addEventListener('click', () =>{
     window.location.href="https://www.facebook.com/misternetfitnessclub"
 })
 
-
-//zoom 
-
-
+// Zoom la click pe produse
 const prodElements = document.querySelectorAll('.prod');
 
 prodElements.forEach((prod) => {
@@ -51,6 +43,9 @@ prodElements.forEach((prod) => {
     if (prod.classList.contains('zoomed-in')) {
       prod.classList.remove('zoomed-in');
     } else {
+      prodElements.forEach((element) => {
+        element.classList.remove('zoomed-in');
+      });
       prod.classList.add('zoomed-in');
     }
   });
