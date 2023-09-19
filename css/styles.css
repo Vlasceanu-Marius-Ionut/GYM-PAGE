@@ -1,4 +1,4 @@
-/* Reset and Common Styles */
+/* Resetare și stiluri comune */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
   transition: linear 0.4s;
 }
 
-/* Body Styles */
+/* Stiluri pentru pagina (body) */
 body {
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header Styles */
+/* Stiluri pentru antet (header) */
 header {
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ header img {
   cursor: pointer;
 }
 
-/* Navigation Styles */
+/* Stiluri pentru meniu de navigare (nav) */
 nav {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Original styles for the <p> elements */
+/* Stiluri originale pentru elementele <p> din meniu */
 nav p {
   cursor: pointer;
   transition: color 0.5s ease-in-out;
@@ -61,41 +61,42 @@ nav p {
   position: relative;
 }
 
-/* Underline styles */
+/* Stiluri pentru subliniere */
 nav p::before {
   content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 1px;
   background-color: rgb(71, 69, 69);
   transform-origin: bottom right;
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transition: transform 0.7s ease;
 }
 
-/* Hover effect */
+/* Efect la survolare */
 nav p:hover {
   transform: scale(1.2);
   transition: 0.7s ease;
   color: rgb(255, 0, 0);
 }
 
-/* Hover effect for the underline */
+/* Efect la survolare pentru subliniere */
 nav p:hover::before {
-  transform-origin: bottom left; 
-  transform: scaleX(1); 
+  transform-origin: bottom left;
+  transform: scaleX(1);
   transition: transform 0.7s ease;
 }
 
 #burger-container {
   background-color: #333333;
 }
-/* Main Content Styles */
+
+/* Stiluri pentru conținutul principal (main) */
 main {
-  width: 95%;
-  background-color: rgba(70, 70, 70, 0.411);
+  width: 100%;
+  background-color: rgba(70, 70, 70, 0.786);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-top: 20px;
@@ -105,9 +106,9 @@ main {
   flex-wrap: wrap;
 }
 
-/* About Us Styles */
+/* Stiluri pentru secțiunea "Despre Noi" (container1) */
 .container1 {
-  width: 90%;
+  width: 100%;
   height: 60%;
   display: flex;
   align-items: center;
@@ -116,7 +117,7 @@ main {
   box-shadow: 10px 2px 10px 10px rgba(0, 0, 0, 0.486);
   padding: 7%;
   overflow: hidden;
-  background-color: rgba(226, 226, 226, 0.907);
+  background-color: rgba(168, 43, 43, 0.985);
 }
 
 .desprenoi {
@@ -142,32 +143,19 @@ h1 {
   margin: 5px;
 }
 
-main {
-  width: 90%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.883);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-top: 20px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+/* Stiluri pentru produse (productcontainer) */
 .productcontainer {
   width: 100%;
-  height: 150vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2%;
 }
 
+/* Stiluri pentru lista de produse (products) */
 .products {
-  width: 80%;
-  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   gap: 100px;
@@ -179,7 +167,7 @@ main {
   justify-content: center;
 }
 
-
+/* Bare de derulare personalizate */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -189,7 +177,7 @@ main {
   border-radius: 5px;
 }
 
-
+/* Stiluri pentru produs (prod) */
 .prod {
   width: max-content;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -200,11 +188,11 @@ main {
   cursor: pointer;
   background-color: white;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .prod img {
-  width: 50%;
+  width: 100%;
 }
 
 .prod > span {
@@ -233,14 +221,15 @@ main {
 
 .zoomed-in {
   transform: scale(2);
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .zoomed-in img {
   max-width: 100%;
   max-height: 100vh;
 }
-/* FOOTER */
+
+/* STILURI PENTRU SUBSOL (FOOTER) */
 footer {
   width: 80%;
   height: 10vh;
@@ -269,18 +258,18 @@ footer li {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
 li:hover {
   transform: scale(1.2);
   transition: 0.3s ease;
   color: rgb(252, 2, 2);
 }
-i, .fab {
- font-size: 30px; 
-} 
 
-/*MEDIA-QUERY*/
+i, .fab {
+  font-size: 30px;
+}
+/* Codul CSS anterior */
 
 /* Media query pentru ecrane mari (minim 1280px) */
 @media (min-width: 1280px) {
@@ -289,13 +278,9 @@ i, .fab {
   .prod,
   .prod img {
     max-width: 90%;
-    margin: 0;
-    padding: 0;
   }
-  .container1{
+  .container1 {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -306,13 +291,35 @@ i, .fab {
   .prod,
   .prod img {
     max-width: 90%;
-    margin: 0;
-    padding: 0;
   }
-  .container1{
+  .container1 {
     max-width: 100%;
-    margin: 0;
+  }
+}
+
+/* Media query pentru ecrane mai mari (minim 768px) */
+@media (min-width: 768px) {
+  .productcontainer,
+  .products,
+  .prod,
+  .prod img {
+    max-width: 100%;
+  }
+  .prod img {
+    width: 50%;
+  }
+  .productcontainer {
+    width: 100%;
+  }
+  main {
+    width: 100%;
     padding: 0;
+    margin: 0;
+  }
+  footer {
+    width: 100%;
+    border: none;
+    border-radius: 0;
   }
 }
 
@@ -323,30 +330,27 @@ i, .fab {
   .prod,
   .prod img {
     max-width: 90%;
-    margin: 0;
-    padding: 0;
   }
-  .container1{
+  .container1 {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 
-/* Media query pentru ecrane mici (minim 430px) */
-@media (min-width: 430px) {
+/* Media query pentru ecrane mici (minim 375px) */
+@media (min-width: 375px) {
   .productcontainer,
   .products,
   .prod,
   .prod img {
     max-width: 40%;
-    margin: 0;
-    padding: 0;
   }
-  .container1{
+  .container1 {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
+  }
+  footer {
+    width: 100%;
+    border: none;
+    border-radius: 0;
   }
 }
 
@@ -357,13 +361,10 @@ i, .fab {
   .prod,
   .prod img {
     max-width: 90%;
-    margin: 0;
-    padding: 0;
   }
-  .container1{
+  .container1 {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 
+/* Restul codului CSS */
