@@ -29,7 +29,7 @@ header {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: rgba(34, 32, 32, 0.808);
+  background-color: rgba(34, 32, 32, 0.487);
   padding: 7px;
   flex-wrap: wrap;
 }
@@ -41,18 +41,47 @@ header img {
 }
 
 /* Navigation Styles */
+/* Stiluri pentru meniul principal */
+.burger-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(2, 2, 2, 0.526);
+  padding: 7px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Stiluri pentru meniul burger */
+.burgermenus, .burgers {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.4s;
+}
+
+/* Stilurile pentru meniul burger în starea activă */
+.show-menu .burgermenus {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.show-menu .burgers {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Alte stiluri pentru meniu și elementele sale */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 90%;
   height: 10vh;
-  background-color: rgba(2, 2, 2, 0.774);
+  background-color: #333333ef;
   box-shadow: red 1px 0.5px 2px 2px;
   flex-wrap: wrap;
 }
 
-/* Original styles for the <p> elements */
 nav p {
   cursor: pointer;
   transition: color 0.5s ease-in-out;
@@ -62,7 +91,6 @@ nav p {
   position: relative;
 }
 
-/* Underline styles */
 nav p::before {
   content: '';
   position: absolute;
@@ -76,22 +104,16 @@ nav p::before {
   transition: transform 0.7s ease;
 }
 
-/* Hover effect */
 nav p:hover {
   transform: scale(1.2);
   transition: 0.7s ease;
   color: rgb(255, 0, 0);
 }
 
-/* Hover effect for the underline */
 nav p:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
   transition: transform 0.7s ease;
-}
-
-#burger-container {
-  background-color: #333333;
 }
 
 /* Main Content Styles */

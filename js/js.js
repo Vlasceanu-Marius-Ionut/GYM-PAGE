@@ -43,24 +43,21 @@ forFacebook.addEventListener('click', () =>{
 
 //BURGERMENU
 
-const burgermenu = document.createElement('div');
-burgermenu.classList.add('burgermenus');
 
-const hamburger = document.createElement('div');
-hamburger.classList.add('burgers')
+const burgerMenu = document.querySelector('.burgermenus');
+const mainNav = document.querySelector('#burger-containers');
 
-document.body.appendChild(burgermenu)
-burgermenu.appendChild(hamburger)
 
-const mainNav = document.querySelector('nav');
-
-burgermenu.addEventListener('click', () =>{
-    mainNav.classList.toggle('show-menu');
+burgerMenu.addEventListener('click', () => {
+  mainNav.classList.toggle('show-menu');
 });
 
-window.addEventListener('resize', () =>{
-    mainNav.classList.remove('show-menu')
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    mainNav.classList.remove('show-menu');
+  }
 });
+
 
 //slider
 let i = 0;
