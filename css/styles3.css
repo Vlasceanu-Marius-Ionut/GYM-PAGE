@@ -383,7 +383,7 @@ td, th {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 769px) {
   html {
     font-size: 15px;
   }
@@ -392,9 +392,6 @@ td, th {
   }
   header img {
     display: none;
-  }
-  nav p {
-    font-size: 11px;
   }
   main {
     margin-top: 5px;
@@ -408,7 +405,7 @@ td, th {
 }
 
 table caption {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 table thead {
@@ -416,14 +413,14 @@ table thead {
 }
 
 table tr {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     display: block;
     border: 1px solid #ccc;
 }
 
 table td {
     display: block;
-    text-align: right;
+    text-align: center;
 }
 
 table td::before {
